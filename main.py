@@ -13,7 +13,7 @@ class Cat:
     def __init__(self, name, age):
         self.name = name
         self.age = age
-        print(f"Cat name - {self.name}. It's - {self.age} year.")
+        print(f"Cat name - {self.name}. It's - {self.age} year. {Cat.cute}")
 
 class MyClass:
     def method(self):
@@ -25,5 +25,8 @@ class MyClass:
     def staticmethod():
         return 'static method called'
 
+
 milo = Cat("Milo", 2)
 print(milo)
+print(Cat.cute)
+print(milo.cute)
